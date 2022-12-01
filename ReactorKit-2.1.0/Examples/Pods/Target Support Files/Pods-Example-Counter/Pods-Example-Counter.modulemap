@@ -1,0 +1,6 @@
+framework module Pods_Example_Counter {
+  umbrella header "Pods-Example-Counter-umbrella.h"
+
+  export *
+  module * { export * }
+}

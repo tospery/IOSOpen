@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Subscription-->
+        <scene sceneID="7ZQ-xD-zO7">
+            <objects>
+                <viewController title="Subscription" id="gfz-SF-neZ" customClass="TermsOfServiceViewController" customModule="IVPNClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rBu-xX-nCO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZOy-z9-2k4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6kh-ei-2sP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-Lv-grs">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-Bm-Dfi">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more information, please read our Privacy Policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQM-2e-Rkx" customClass="ActiveLabel" customModule="ActiveLabel">
+                                                <rect key="frame" x="27" y="442" width="321" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="750" constant="266" id="Brj-B8-Hns"/>
+                                                    <constraint firstAttribute="height" constant="44" id="N1p-um-oDB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" name="ivpnLabelPrimary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qrM-8m-TdV">
+                                                <rect key="frame" x="22" y="25" width="331" height="417"/>
+                                                <color key="backgroundColor" name="ivpnBackgroundPrimary"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" priority="250" constant="276" id="Dhx-1M-utw"/>
+                                                </constraints>
+                                                <string key="text">What information do we collect and store when you sign up for our service?
+
+To ensure your privacy we collect only your email address to facilitate password resets and send important security updates relating to our service. You are free to use any email address. We do not request or store your name, physical addresses, phone number or any other personal information.
+
+What information is logged when customers connect to our network?
+
+We do not store any connection logs whatsoever. In addition we do not log bandwidth usage, session data or requests to our DNS servers.
+
+Do you collect or store any usage/stats information relating to an account?
+
+IVPN purposefully does not log any usage data associated with an account as we provide an unlimited and unrestricted quota free service.</string>
+                                                <color key="textColor" name="ivpnLabelPrimary"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l67-ez-3v8">
+                                                <rect key="frame" x="49.666666666666657" y="518" width="276" height="50"/>
+                                                <color key="backgroundColor" name="ivpnBlue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="276" id="K24-01-hMp"/>
+                                                    <constraint firstAttribute="height" constant="50" id="cTJ-MW-sgd"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Agree and continue">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="agree:" destination="gfz-SF-neZ" eventType="touchUpInside" id="YYC-Fo-8VP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOr-qA-R1R">
+                                                <rect key="frame" x="49.666666666666657" y="588" width="276" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="I2y-xc-Far"/>
+                                                    <constraint firstAttribute="width" constant="276" id="hk0-tJ-He7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal" title="Decline">
+                                                    <color key="titleColor" name="ivpnBlue"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="decline:" destination="gfz-SF-neZ" eventType="touchUpInside" id="fLL-5n-WyR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="ivpnBackgroundPrimary"/>
+                                        <constraints>
+                                            <constraint firstItem="qrM-8m-TdV" firstAttribute="top" secondItem="bDc-Bm-Dfi" secondAttribute="top" constant="25" id="2ZE-lX-P7L"/>
+                                            <constraint firstItem="aQM-2e-Rkx" firstAttribute="leading" secondItem="bDc-Bm-Dfi" secondAttribute="leading" constant="27" id="4Nv-5J-fXP"/>
+                                            <constraint firstItem="aQM-2e-Rkx" firstAttribute="top" secondItem="qrM-8m-TdV" secondAttribute="bottom" id="DuZ-cY-DHe"/>
+                                            <constraint firstAttribute="height" constant="690" id="EuL-ra-Krg"/>
+                                            <constraint firstAttribute="trailing" secondItem="qrM-8m-TdV" secondAttribute="trailing" constant="22" id="H1H-C8-Sub"/>
+                                            <constraint firstItem="qrM-8m-TdV" firstAttribute="centerX" secondItem="bDc-Bm-Dfi" secondAttribute="centerX" id="JK2-lJ-KBC"/>
+                                            <constraint firstItem="l67-ez-3v8" firstAttribute="centerX" secondItem="bDc-Bm-Dfi" secondAttribute="centerX" id="KgP-jO-hkv"/>
+                                            <constraint firstItem="qrM-8m-TdV" firstAttribute="leading" secondItem="bDc-Bm-Dfi" secondAttribute="leading" constant="22" id="aqh-P7-k8X"/>
+                                            <constraint firstItem="vOr-qA-R1R" firstAttribute="top" secondItem="l67-ez-3v8" secondAttribute="bottom" constant="20" id="bzF-kx-5V3"/>
+                                            <constraint firstItem="l67-ez-3v8" firstAttribute="top" secondItem="aQM-2e-Rkx" secondAttribute="bottom" constant="32" id="fv4-1e-bzv"/>
+                                            <constraint firstItem="vOr-qA-R1R" firstAttribute="centerX" secondItem="bDc-Bm-Dfi" secondAttribute="centerX" id="qjA-9z-6ni"/>
+                                            <constraint firstAttribute="trailing" secondItem="aQM-2e-Rkx" secondAttribute="trailing" constant="27" id="stB-qB-l3v"/>
+                                            <constraint firstItem="aQM-2e-Rkx" firstAttribute="centerX" secondItem="bDc-Bm-Dfi" secondAttribute="centerX" id="v03-bb-s42"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="ybB-X8-HF1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bDc-Bm-Dfi" firstAttribute="leading" secondItem="JhE-Lv-grs" secondAttribute="leading" priority="750" id="Z3H-qh-f0Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="bDc-Bm-Dfi" secondAttribute="bottom" id="cEa-cp-H3E"/>
+                                    <constraint firstItem="bDc-Bm-Dfi" firstAttribute="centerX" secondItem="JhE-Lv-grs" secondAttribute="centerX" id="iOU-Wp-2ci"/>
+                                    <constraint firstItem="bDc-Bm-Dfi" firstAttribute="top" secondItem="JhE-Lv-grs" secondAttribute="top" id="j9n-y0-C4R"/>
+                                    <constraint firstItem="bDc-Bm-Dfi" firstAttribute="height" secondItem="JhE-Lv-grs" secondAttribute="height" priority="250" id="oWs-3O-Ed3"/>
+                                    <constraint firstItem="bDc-Bm-Dfi" firstAttribute="width" secondItem="JhE-Lv-grs" secondAttribute="width" priority="750" id="vZF-x4-m0B"/>
+                                    <constraint firstAttribute="trailing" secondItem="bDc-Bm-Dfi" secondAttribute="trailing" priority="750" id="zLv-rG-HRt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="ivpnBackgroundPrimary"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JhE-Lv-grs" secondAttribute="bottom" id="7gs-bd-4fd"/>
+                            <constraint firstItem="JhE-Lv-grs" firstAttribute="leading" secondItem="6kh-ei-2sP" secondAttribute="leading" id="UGe-7d-5Mh"/>
+                            <constraint firstItem="JhE-Lv-grs" firstAttribute="top" secondItem="rBu-xX-nCO" secondAttribute="bottom" id="Xv3-f9-i7B"/>
+                            <constraint firstAttribute="trailing" secondItem="JhE-Lv-grs" secondAttribute="trailing" id="qS6-MI-oHs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Usage Notice" id="OmD-nV-rxs">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="3Tx-E2-Cl7">
+                            <connections>
+                                <action selector="cancel:" destination="gfz-SF-neZ" id="8GC-9X-HiI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Agree" id="Pst-mN-Brr">
+                            <connections>
+                                <action selector="agree:" destination="gfz-SF-neZ" id="Sho-yh-sL3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noteLabel" destination="aQM-2e-Rkx" id="QWq-pT-Hj2"/>
+                        <outlet property="textView" destination="qrM-8m-TdV" id="E4I-xG-m8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s93-Jm-UAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="819"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cq2-aL-Vqk">
+            <objects>
+                <navigationController storyboardIdentifier="termsOfServiceView" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cBX-xF-EWJ" customClass="NavigationController" customModule="IVPNClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fAG-5z-HGX">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gfz-SF-neZ" kind="relationship" relationship="rootViewController" id="ai4-nR-nFs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhU-x0-TF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1694" y="819"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="aQM-2e-Rkx">
+            <size key="intrinsicContentSize" width="340" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="ivpnBackgroundPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ivpnBlue">
+            <color red="0.22352941176470589" green="0.5607843137254902" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ivpnLabelPrimary">
+            <color red="0.14901960784313725" green="0.22352941176470589" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

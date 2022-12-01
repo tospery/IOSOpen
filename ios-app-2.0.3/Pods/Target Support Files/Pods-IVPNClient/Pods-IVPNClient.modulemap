@@ -1,0 +1,6 @@
+framework module Pods_IVPNClient {
+  umbrella header "Pods-IVPNClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

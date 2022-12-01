@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0116629339E64F2C3974AB90 /* Pods_QLadder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95177D1B41FAEF4A74163C7 /* Pods_QLadder.framework */; };
+		1BB905E40E906E2AF0240D57 /* Pods_PacketTunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94862F15FCEBB7D7F3DD0D6 /* Pods_PacketTunnel.framework */; };
+		D80F5B19205FBF7400251694 /* QueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F5B18205FBF7400251694 /* QueryManager.swift */; };
+		D80F5B1B205FBFB700251694 /* Buddha.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80F5B1A205FBFB700251694 /* Buddha.swift */; };
+		D859A39F205BA3B800B089FC /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859A39E205BA3B800B089FC /* Proxy.swift */; };
+		D8866B831FBC396F002E406C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8866B811FBC396F002E406C /* Main.storyboard */; };
+		D8866B851FBC396F002E406C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8866B841FBC396F002E406C /* Assets.xcassets */; };
+		D8866B881FBC396F002E406C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8866B861FBC396F002E406C /* LaunchScreen.storyboard */; };
+		D8866BB21FBC39D9002E406C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866BB11FBC39D9002E406C /* PacketTunnelProvider.swift */; };
+		D8866BB71FBC39D9002E406C /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8866BAF1FBC39D8002E406C /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8866BBF1FBC3C7D002E406C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BBE1FBC3C7D002E406C /* NetworkExtension.framework */; };
+		D8866BC01FBC3CAF002E406C /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BBE1FBC3C7D002E406C /* NetworkExtension.framework */; };
+		D8866BCB1FBD7450002E406C /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC21FBD7450002E406C /* Yaml.framework */; };
+		D8866BCC1FBD7450002E406C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC31FBD7450002E406C /* CocoaAsyncSocket.framework */; };
+		D8866BCD1FBD7450002E406C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC41FBD7450002E406C /* CocoaLumberjackSwift.framework */; };
+		D8866BCE1FBD7450002E406C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC51FBD7450002E406C /* NEKit.framework */; };
+		D8866BCF1FBD7450002E406C /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC61FBD7450002E406C /* tun2socks.framework */; };
+		D8866BD01FBD7450002E406C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC71FBD7450002E406C /* CocoaLumberjack.framework */; };
+		D8866BD11FBD7450002E406C /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC81FBD7450002E406C /* lwip.framework */; };
+		D8866BD21FBD7450002E406C /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC91FBD7450002E406C /* Resolver.framework */; };
+		D8866BD31FBD7450002E406C /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BCA1FBD7450002E406C /* Sodium.framework */; };
+		D8866BD41FBD7456002E406C /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC31FBD7450002E406C /* CocoaAsyncSocket.framework */; };
+		D8866BD51FBD7456002E406C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC71FBD7450002E406C /* CocoaLumberjack.framework */; };
+		D8866BD61FBD7456002E406C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC41FBD7450002E406C /* CocoaLumberjackSwift.framework */; };
+		D8866BD71FBD7456002E406C /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC81FBD7450002E406C /* lwip.framework */; };
+		D8866BD81FBD7456002E406C /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC51FBD7450002E406C /* NEKit.framework */; };
+		D8866BD91FBD7456002E406C /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC91FBD7450002E406C /* Resolver.framework */; };
+		D8866BDA1FBD7456002E406C /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BCA1FBD7450002E406C /* Sodium.framework */; };
+		D8866BDB1FBD7456002E406C /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC61FBD7450002E406C /* tun2socks.framework */; };
+		D8866BDC1FBD7456002E406C /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BC21FBD7450002E406C /* Yaml.framework */; };
+		D8866BDE1FBD7457002E406C /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8866BDD1FBD7457002E406C /* MMDB.framework */; };
+		D8866BE61FBD7844002E406C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866BE01FBD7844002E406C /* AppDelegate.swift */; };
+		D8866BF21FBD8001002E406C /* QLColorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866BF11FBD8000002E406C /* QLColorDefine.swift */; };
+		D8866BF41FBD8053002E406C /* QLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866BF31FBD8053002E406C /* QLBaseViewController.swift */; };
+		D8866C001FBD8552002E406C /* QLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866BFF1FBD8552002E406C /* QLNavigationController.swift */; };
+		D8866C021FBD856A002E406C /* QLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8866C011FBD856A002E406C /* QLTabBarController.swift */; };
+		D89A2A5920633E140000D6A0 /* QLBuddhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A2A5720633E140000D6A0 /* QLBuddhaViewController.swift */; };
+		D89A2A5A20633E140000D6A0 /* QLBuddhaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89A2A5820633E140000D6A0 /* QLBuddhaViewController.xib */; };
+		D89A2A5F20636A710000D6A0 /* QLBuddhaListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89A2A5D20636A700000D6A0 /* QLBuddhaListViewController.swift */; };
+		D89A2A6020636A710000D6A0 /* QLBuddhaListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89A2A5E20636A700000D6A0 /* QLBuddhaListViewController.xib */; };
+		D8D45F0920624CA400DEEF1D /* QLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45EFF20624CA400DEEF1D /* QLHomeViewController.swift */; };
+		D8D45F0A20624CA400DEEF1D /* QLNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45F0020624CA400DEEF1D /* QLNewViewController.swift */; };
+		D8D45F0B20624CA400DEEF1D /* QLNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D45F0120624CA400DEEF1D /* QLNewViewController.xib */; };
+		D8D45F0C20624CA400DEEF1D /* QLDebugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D45F0320624CA400DEEF1D /* QLDebugViewController.xib */; };
+		D8D45F0D20624CA400DEEF1D /* QLAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45F0420624CA400DEEF1D /* QLAboutViewController.swift */; };
+		D8D45F0E20624CA400DEEF1D /* QLDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45F0620624CA400DEEF1D /* QLDebugViewController.swift */; };
+		D8D45F0F20624CA400DEEF1D /* QLMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45F0820624CA400DEEF1D /* QLMeViewController.swift */; };
+		D8D45F1220624CC500DEEF1D /* QLBuddhaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D45F1020624CC500DEEF1D /* QLBuddhaCell.swift */; };
+		D8D45F1320624CC500DEEF1D /* QLBuddhaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D45F1120624CC500DEEF1D /* QLBuddhaCell.xib */; };
+		D8EBED2C1FC2C84300477A97 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EBED2B1FC2C84300477A97 /* VPNManager.swift */; };
+		D8EBED321FC3D09600477A97 /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = D8EBED311FC3D09600477A97 /* NEKitRule.conf */; };
+		D8EBED351FC4055000477A97 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EBED341FC4055000477A97 /* AppConfig.swift */; };
+		D8FF912F1FC6CCD400AFA494 /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF912E1FC6CCD400AFA494 /* ConfigManager.swift */; };
+		D8FF91391FCD0BF900AFA494 /* UIView+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF91381FCD0BF800AFA494 /* UIView+Color.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8866BB51FBC39D9002E406C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8866B721FBC396F002E406C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8866BAE1FBC39D8002E406C;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8866BBB1FBC39D9002E406C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D8866BB71FBC39D9002E406C /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		072D594BED902B2FA183883C /* Pods-QLadder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLadder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QLadder/Pods-QLadder.debug.xcconfig"; sourceTree = "<group>"; };
+		2592B8F9266210F74A9B00D1 /* Pods_QLadderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLadderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBBC7B7C96FF6CD3C1F2E01 /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
+		87C7EF1E372693D4B4D12141 /* Pods-QLadder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLadder.release.xcconfig"; path = "Pods/Target Support Files/Pods-QLadder/Pods-QLadder.release.xcconfig"; sourceTree = "<group>"; };
+		A773E43AB7F368E6A353D9F7 /* Pods_QLadderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLadderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA8410ADD1CCB5860EDF120 /* Pods-PacketTunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		D80F5B18205FBF7400251694 /* QueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryManager.swift; sourceTree = "<group>"; };
+		D80F5B1A205FBFB700251694 /* Buddha.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buddha.swift; sourceTree = "<group>"; };
+		D859A39E205BA3B800B089FC /* Proxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		D8866B7A1FBC396F002E406C /* QLadder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLadder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8866B821FBC396F002E406C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8866B841FBC396F002E406C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8866B871FBC396F002E406C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8866B891FBC396F002E406C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8866BAF1FBC39D8002E406C /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8866BB11FBC39D9002E406C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		D8866BB31FBC39D9002E406C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8866BB41FBC39D9002E406C /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		D8866BBC1FBC3A25002E406C /* QLadder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QLadder.entitlements; sourceTree = "<group>"; };
+		D8866BBE1FBC3C7D002E406C /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		D8866BC21FBD7450002E406C /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/iOS/Yaml.framework; sourceTree = "<group>"; };
+		D8866BC31FBD7450002E406C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		D8866BC41FBD7450002E406C /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		D8866BC51FBD7450002E406C /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/iOS/NEKit.framework; sourceTree = "<group>"; };
+		D8866BC61FBD7450002E406C /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/iOS/tun2socks.framework; sourceTree = "<group>"; };
+		D8866BC71FBD7450002E406C /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		D8866BC81FBD7450002E406C /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/iOS/lwip.framework; sourceTree = "<group>"; };
+		D8866BC91FBD7450002E406C /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
+		D8866BCA1FBD7450002E406C /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/iOS/Sodium.framework; sourceTree = "<group>"; };
+		D8866BDD1FBD7457002E406C /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/iOS/MMDB.framework; sourceTree = "<group>"; };
+		D8866BE01FBD7844002E406C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8866BF11FBD8000002E406C /* QLColorDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLColorDefine.swift; sourceTree = "<group>"; };
+		D8866BF31FBD8053002E406C /* QLBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLBaseViewController.swift; sourceTree = "<group>"; };
+		D8866BFF1FBD8552002E406C /* QLNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLNavigationController.swift; sourceTree = "<group>"; };
+		D8866C011FBD856A002E406C /* QLTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLTabBarController.swift; sourceTree = "<group>"; };
+		D89A2A5720633E140000D6A0 /* QLBuddhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLBuddhaViewController.swift; sourceTree = "<group>"; };
+		D89A2A5820633E140000D6A0 /* QLBuddhaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QLBuddhaViewController.xib; sourceTree = "<group>"; };
+		D89A2A5D20636A700000D6A0 /* QLBuddhaListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLBuddhaListViewController.swift; sourceTree = "<group>"; };
+		D89A2A5E20636A700000D6A0 /* QLBuddhaListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QLBuddhaListViewController.xib; sourceTree = "<group>"; };
+		D8D45EFF20624CA400DEEF1D /* QLHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLHomeViewController.swift; sourceTree = "<group>"; };
+		D8D45F0020624CA400DEEF1D /* QLNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLNewViewController.swift; sourceTree = "<group>"; };
+		D8D45F0120624CA400DEEF1D /* QLNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLNewViewController.xib; sourceTree = "<group>"; };
+		D8D45F0320624CA400DEEF1D /* QLDebugViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QLDebugViewController.xib; sourceTree = "<group>"; };
+		D8D45F0420624CA400DEEF1D /* QLAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLAboutViewController.swift; sourceTree = "<group>"; };
+		D8D45F0620624CA400DEEF1D /* QLDebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLDebugViewController.swift; sourceTree = "<group>"; };
+		D8D45F0820624CA400DEEF1D /* QLMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLMeViewController.swift; sourceTree = "<group>"; };
+		D8D45F1020624CC500DEEF1D /* QLBuddhaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLBuddhaCell.swift; sourceTree = "<group>"; };
+		D8D45F1120624CC500DEEF1D /* QLBuddhaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QLBuddhaCell.xib; sourceTree = "<group>"; };
+		D8EBED2B1FC2C84300477A97 /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		D8EBED311FC3D09600477A97 /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
+		D8EBED341FC4055000477A97 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		D8FF912E1FC6CCD400AFA494 /* ConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		D8FF91381FCD0BF800AFA494 /* UIView+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Color.swift"; sourceTree = "<group>"; };
+		F94862F15FCEBB7D7F3DD0D6 /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95177D1B41FAEF4A74163C7 /* Pods_QLadder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLadder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8866B771FBC396F002E406C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8866BBF1FBC3C7D002E406C /* NetworkExtension.framework in Frameworks */,
+				D8866BCB1FBD7450002E406C /* Yaml.framework in Frameworks */,
+				D8866BCC1FBD7450002E406C /* CocoaAsyncSocket.framework in Frameworks */,
+				D8866BCD1FBD7450002E406C /* CocoaLumberjackSwift.framework in Frameworks */,
+				D8866BCE1FBD7450002E406C /* NEKit.framework in Frameworks */,
+				D8866BCF1FBD7450002E406C /* tun2socks.framework in Frameworks */,
+				D8866BD01FBD7450002E406C /* CocoaLumberjack.framework in Frameworks */,
+				D8866BD11FBD7450002E406C /* lwip.framework in Frameworks */,
+				D8866BD21FBD7450002E406C /* Resolver.framework in Frameworks */,
+				D8866BD31FBD7450002E406C /* Sodium.framework in Frameworks */,
+				0116629339E64F2C3974AB90 /* Pods_QLadder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8866BAC1FBC39D8002E406C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8866BC01FBC3CAF002E406C /* NetworkExtension.framework in Frameworks */,
+				D8866BDE1FBD7457002E406C /* MMDB.framework in Frameworks */,
+				D8866BD41FBD7456002E406C /* CocoaAsyncSocket.framework in Frameworks */,
+				D8866BD51FBD7456002E406C /* CocoaLumberjack.framework in Frameworks */,
+				D8866BD61FBD7456002E406C /* CocoaLumberjackSwift.framework in Frameworks */,
+				D8866BD71FBD7456002E406C /* lwip.framework in Frameworks */,
+				D8866BD81FBD7456002E406C /* NEKit.framework in Frameworks */,
+				D8866BD91FBD7456002E406C /* Resolver.framework in Frameworks */,
+				D8866BDA1FBD7456002E406C /* Sodium.framework in Frameworks */,
+				D8866BDB1FBD7456002E406C /* tun2socks.framework in Frameworks */,
+				D8866BDC1FBD7456002E406C /* Yaml.framework in Frameworks */,
+				1BB905E40E906E2AF0240D57 /* Pods_PacketTunnel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44CC8C8D996DB7C4CB8E4575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA8410ADD1CCB5860EDF120 /* Pods-PacketTunnel.debug.xcconfig */,
+				6FBBC7B7C96FF6CD3C1F2E01 /* Pods-PacketTunnel.release.xcconfig */,
+				072D594BED902B2FA183883C /* Pods-QLadder.debug.xcconfig */,
+				87C7EF1E372693D4B4D12141 /* Pods-QLadder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D859A39D205BA3B800B089FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D859A39E205BA3B800B089FC /* Proxy.swift */,
+				D80F5B1A205FBFB700251694 /* Buddha.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8866B711FBC396F002E406C = {
+			isa = PBXGroup;
+			children = (
+				D8866B7C1FBC396F002E406C /* QLadder */,
+				D8866BB01FBC39D9002E406C /* PacketTunnel */,
+				D8866B7B1FBC396F002E406C /* Products */,
+				D8866BBD1FBC3C7D002E406C /* Frameworks */,
+				44CC8C8D996DB7C4CB8E4575 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D8866B7B1FBC396F002E406C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8866B7A1FBC396F002E406C /* QLadder.app */,
+				D8866BAF1FBC39D8002E406C /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8866B7C1FBC396F002E406C /* QLadder */ = {
+			isa = PBXGroup;
+			children = (
+				D8EBED301FC3D09600477A97 /* Resource */,
+				D8866BDF1FBD7844002E406C /* Class */,
+				D8866BBC1FBC3A25002E406C /* QLadder.entitlements */,
+				D8866B811FBC396F002E406C /* Main.storyboard */,
+				D8866B841FBC396F002E406C /* Assets.xcassets */,
+				D8866B861FBC396F002E406C /* LaunchScreen.storyboard */,
+				D8866B891FBC396F002E406C /* Info.plist */,
+			);
+			path = QLadder;
+			sourceTree = "<group>";
+		};
+		D8866BB01FBC39D9002E406C /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BB11FBC39D9002E406C /* PacketTunnelProvider.swift */,
+				D8866BB31FBC39D9002E406C /* Info.plist */,
+				D8866BB41FBC39D9002E406C /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		D8866BBD1FBC3C7D002E406C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BDD1FBD7457002E406C /* MMDB.framework */,
+				D8866BC31FBD7450002E406C /* CocoaAsyncSocket.framework */,
+				D8866BC71FBD7450002E406C /* CocoaLumberjack.framework */,
+				D8866BC41FBD7450002E406C /* CocoaLumberjackSwift.framework */,
+				D8866BC81FBD7450002E406C /* lwip.framework */,
+				D8866BC51FBD7450002E406C /* NEKit.framework */,
+				D8866BC91FBD7450002E406C /* Resolver.framework */,
+				D8866BCA1FBD7450002E406C /* Sodium.framework */,
+				D8866BC61FBD7450002E406C /* tun2socks.framework */,
+				D8866BC21FBD7450002E406C /* Yaml.framework */,
+				D8866BBE1FBC3C7D002E406C /* NetworkExtension.framework */,
+				F94862F15FCEBB7D7F3DD0D6 /* Pods_PacketTunnel.framework */,
+				F95177D1B41FAEF4A74163C7 /* Pods_QLadder.framework */,
+				A773E43AB7F368E6A353D9F7 /* Pods_QLadderTests.framework */,
+				2592B8F9266210F74A9B00D1 /* Pods_QLadderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8866BDF1FBD7844002E406C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BE01FBD7844002E406C /* AppDelegate.swift */,
+				D859A39D205BA3B800B089FC /* Model */,
+				D8866BED1FBD8000002E406C /* SDK */,
+				D8D45EFD20624CA400DEEF1D /* ViewController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D8866BED1FBD8000002E406C /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				D8FF91371FCD0BD600AFA494 /* Extension */,
+				D8EBED2D1FC2C87A00477A97 /* Utils */,
+				D8EBED2A1FC2C84300477A97 /* Manager */,
+				D8866BEE1FBD8000002E406C /* Common */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		D8866BEE1FBD8000002E406C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BEF1FBD8000002E406C /* Control */,
+				D8866BF01FBD8000002E406C /* Define */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D8866BEF1FBD8000002E406C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BF31FBD8053002E406C /* QLBaseViewController.swift */,
+				D8866BFF1FBD8552002E406C /* QLNavigationController.swift */,
+				D8866C011FBD856A002E406C /* QLTabBarController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		D8866BF01FBD8000002E406C /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				D8866BF11FBD8000002E406C /* QLColorDefine.swift */,
+				D8EBED341FC4055000477A97 /* AppConfig.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		D8D45EFD20624CA400DEEF1D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D8D45EFE20624CA400DEEF1D /* Home */,
+				D8D45F0220624CA400DEEF1D /* About */,
+				D8D45F0720624CA400DEEF1D /* Me */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D8D45EFE20624CA400DEEF1D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8D45EFF20624CA400DEEF1D /* QLHomeViewController.swift */,
+				D8D45F0020624CA400DEEF1D /* QLNewViewController.swift */,
+				D8D45F0120624CA400DEEF1D /* QLNewViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8D45F0220624CA400DEEF1D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				D8D45F0420624CA400DEEF1D /* QLAboutViewController.swift */,
+				D8D45F0620624CA400DEEF1D /* QLDebugViewController.swift */,
+				D8D45F0320624CA400DEEF1D /* QLDebugViewController.xib */,
+				D89A2A5720633E140000D6A0 /* QLBuddhaViewController.swift */,
+				D89A2A5820633E140000D6A0 /* QLBuddhaViewController.xib */,
+				D89A2A5D20636A700000D6A0 /* QLBuddhaListViewController.swift */,
+				D89A2A5E20636A700000D6A0 /* QLBuddhaListViewController.xib */,
+				D8D45F0520624CA400DEEF1D /* View */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		D8D45F0520624CA400DEEF1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8D45F1020624CC500DEEF1D /* QLBuddhaCell.swift */,
+				D8D45F1120624CC500DEEF1D /* QLBuddhaCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8D45F0720624CA400DEEF1D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				D8D45F0820624CA400DEEF1D /* QLMeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		D8EBED2A1FC2C84300477A97 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D8EBED2B1FC2C84300477A97 /* VPNManager.swift */,
+				D8FF912E1FC6CCD400AFA494 /* ConfigManager.swift */,
+				D80F5B18205FBF7400251694 /* QueryManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D8EBED2D1FC2C87A00477A97 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D8EBED301FC3D09600477A97 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D8EBED311FC3D09600477A97 /* NEKitRule.conf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D8FF91371FCD0BD600AFA494 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D8FF91381FCD0BF800AFA494 /* UIView+Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8866B791FBC396F002E406C /* QLadder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8866BA21FBC396F002E406C /* Build configuration list for PBXNativeTarget "QLadder" */;
+			buildPhases = (
+				0F8A06E0594BE59A755ED2E0 /* [CP] Check Pods Manifest.lock */,
+				D8866B761FBC396F002E406C /* Sources */,
+				D8866B771FBC396F002E406C /* Frameworks */,
+				D8866B781FBC396F002E406C /* Resources */,
+				D8866BBB1FBC39D9002E406C /* Embed App Extensions */,
+				D8866BC11FBD729E002E406C /* ShellScript */,
+				A9C7CD57315A1523D6639EE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8866BB61FBC39D9002E406C /* PBXTargetDependency */,
+			);
+			name = QLadder;
+			productName = QLadder;
+			productReference = D8866B7A1FBC396F002E406C /* QLadder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8866BAE1FBC39D8002E406C /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8866BB81FBC39D9002E406C /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				DDF05FC472331099A324FD75 /* [CP] Check Pods Manifest.lock */,
+				D8866BAB1FBC39D8002E406C /* Sources */,
+				D8866BAC1FBC39D8002E406C /* Frameworks */,
+				D8866BAD1FBC39D8002E406C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = D8866BAF1FBC39D8002E406C /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8866B721FBC396F002E406C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = qding;
+				TargetAttributes = {
+					D8866B791FBC396F002E406C = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					D8866BAE1FBC39D8002E406C = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D8866B751FBC396F002E406C /* Build configuration list for PBXProject "QLadder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8866B711FBC396F002E406C;
+			productRefGroup = D8866B7B1FBC396F002E406C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8866B791FBC396F002E406C /* QLadder */,
+				D8866BAE1FBC39D8002E406C /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8866B781FBC396F002E406C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8866B881FBC396F002E406C /* LaunchScreen.storyboard in Resources */,
+				D89A2A5A20633E140000D6A0 /* QLBuddhaViewController.xib in Resources */,
+				D8EBED321FC3D09600477A97 /* NEKitRule.conf in Resources */,
+				D8D45F0B20624CA400DEEF1D /* QLNewViewController.xib in Resources */,
+				D8D45F0C20624CA400DEEF1D /* QLDebugViewController.xib in Resources */,
+				D89A2A6020636A710000D6A0 /* QLBuddhaListViewController.xib in Resources */,
+				D8866B851FBC396F002E406C /* Assets.xcassets in Resources */,
+				D8D45F1320624CC500DEEF1D /* QLBuddhaCell.xib in Resources */,
+				D8866B831FBC396F002E406C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8866BAD1FBC39D8002E406C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F8A06E0594BE59A755ED2E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QLadder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C7CD57315A1523D6639EE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QLadder/Pods-QLadder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftColor/SwiftColor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftColor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QLadder/Pods-QLadder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8866BC11FBD729E002E406C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/NEKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/lwip.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MMDB.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Resolver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/tun2socks.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Sodium.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Yaml.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		DDF05FC472331099A324FD75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PacketTunnel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8866B761FBC396F002E406C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8866C021FBD856A002E406C /* QLTabBarController.swift in Sources */,
+				D8FF912F1FC6CCD400AFA494 /* ConfigManager.swift in Sources */,
+				D8EBED351FC4055000477A97 /* AppConfig.swift in Sources */,
+				D8D45F0E20624CA400DEEF1D /* QLDebugViewController.swift in Sources */,
+				D8D45F0A20624CA400DEEF1D /* QLNewViewController.swift in Sources */,
+				D859A39F205BA3B800B089FC /* Proxy.swift in Sources */,
+				D80F5B19205FBF7400251694 /* QueryManager.swift in Sources */,
+				D8EBED2C1FC2C84300477A97 /* VPNManager.swift in Sources */,
+				D8FF91391FCD0BF900AFA494 /* UIView+Color.swift in Sources */,
+				D8866BF41FBD8053002E406C /* QLBaseViewController.swift in Sources */,
+				D8866BF21FBD8001002E406C /* QLColorDefine.swift in Sources */,
+				D89A2A5920633E140000D6A0 /* QLBuddhaViewController.swift in Sources */,
+				D8D45F0F20624CA400DEEF1D /* QLMeViewController.swift in Sources */,
+				D8D45F1220624CC500DEEF1D /* QLBuddhaCell.swift in Sources */,
+				D8866BE61FBD7844002E406C /* AppDelegate.swift in Sources */,
+				D8866C001FBD8552002E406C /* QLNavigationController.swift in Sources */,
+				D89A2A5F20636A710000D6A0 /* QLBuddhaListViewController.swift in Sources */,
+				D8D45F0D20624CA400DEEF1D /* QLAboutViewController.swift in Sources */,
+				D8D45F0920624CA400DEEF1D /* QLHomeViewController.swift in Sources */,
+				D80F5B1B205FBFB700251694 /* Buddha.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8866BAB1FBC39D8002E406C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8866BB21FBC39D9002E406C /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8866BB61FBC39D9002E406C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8866BAE1FBC39D8002E406C /* PacketTunnel */;
+			targetProxy = D8866BB51FBC39D9002E406C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8866B811FBC396F002E406C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8866B821FBC396F002E406C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8866B861FBC396F002E406C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8866B871FBC396F002E406C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8866BA01FBC396F002E406C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6232V88552;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8866BA11FBC396F002E406C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6232V88552;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8866BA31FBC396F002E406C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072D594BED902B2FA183883C /* Pods-QLadder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QLadder/QLadder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDE622528T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QLadder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tospery.ladder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8866BA41FBC396F002E406C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C7EF1E372693D4B4D12141 /* Pods-QLadder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QLadder/QLadder.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDE622528T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = QLadder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tospery.ladder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8866BB91FBC39D9002E406C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA8410ADD1CCB5860EDF120 /* Pods-PacketTunnel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDE622528T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tospery.ladder.tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8866BBA1FBC39D9002E406C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FBBC7B7C96FF6CD3C1F2E01 /* Pods-PacketTunnel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WDE622528T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tospery.ladder.tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8866B751FBC396F002E406C /* Build configuration list for PBXProject "QLadder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8866BA01FBC396F002E406C /* Debug */,
+				D8866BA11FBC396F002E406C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8866BA21FBC396F002E406C /* Build configuration list for PBXNativeTarget "QLadder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8866BA31FBC396F002E406C /* Debug */,
+				D8866BA41FBC396F002E406C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8866BB81FBC39D9002E406C /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8866BB91FBC39D9002E406C /* Debug */,
+				D8866BBA1FBC39D9002E406C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8866B721FBC396F002E406C /* Project object */;
+}

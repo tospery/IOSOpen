@@ -1,0 +1,6 @@
+framework module Pods_wireguard_tunnel_provider {
+  umbrella header "Pods-wireguard-tunnel-provider-umbrella.h"
+
+  export *
+  module * { export * }
+}

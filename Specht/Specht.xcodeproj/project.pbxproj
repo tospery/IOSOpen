@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360B584E1CE810910018784F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B584C1CE810870018784F /* NetworkExtension.framework */; };
+		36164A561CE71F3F00BAC90A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DCE5D31CA6972400C61029 /* CommonCrypto.framework */; };
+		36164A5C1CE71F4000BAC90A /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A581CE71F4000BAC90A /* MMDB.framework */; };
+		36164A5D1CE71F4000BAC90A /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A591CE71F4000BAC90A /* Sodium.framework */; };
+		36164A5E1CE71F4000BAC90A /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A5A1CE71F4000BAC90A /* Yaml.framework */; };
+		362A54401C9BD5E00056B653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A543F1C9BD5E00056B653 /* AppDelegate.swift */; };
+		362A54421C9BD5E00056B653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362A54411C9BD5E00056B653 /* Assets.xcassets */; };
+		362A54451C9BD5E00056B653 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362A54431C9BD5E00056B653 /* MainMenu.xib */; };
+		362A549A1C9CF0C30056B653 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54961C9CF0B20056B653 /* CocoaAsyncSocket.framework */; };
+		362A549B1C9CF0C30056B653 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54961C9CF0B20056B653 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		362A54F11C9D056F0056B653 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EF1C9D056F0056B653 /* CocoaLumberjackSwift.framework */; };
+		362A54F21C9D05760056B653 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EE1C9D056F0056B653 /* CocoaLumberjack.framework */; };
+		362A54F31C9D05760056B653 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EE1C9D056F0056B653 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		362A54F51C9D05780056B653 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EF1C9D056F0056B653 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3636DA511CE81D95007F9787 /* SpechtTunnelPacketProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3643CE141CC283BD005A9C4B /* SpechtTunnelPacketProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3643CE191CC283BD005A9C4B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643CE181CC283BD005A9C4B /* PacketTunnelProvider.swift */; };
+		3643CE241CC28467005A9C4B /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EE1C9D056F0056B653 /* CocoaLumberjack.framework */; };
+		3643CE251CC28467005A9C4B /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54EF1C9D056F0056B653 /* CocoaLumberjackSwift.framework */; };
+		3643CE481CC290AF005A9C4B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362A54961C9CF0B20056B653 /* CocoaAsyncSocket.framework */; };
+		36A7194A1D5B539B00DC35F5 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719471D5B539B00DC35F5 /* lwip.framework */; };
+		36A7194B1D5B539B00DC35F5 /* lwip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719471D5B539B00DC35F5 /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36A7194C1D5B539B00DC35F5 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719481D5B539B00DC35F5 /* NEKit.framework */; };
+		36A7194D1D5B539B00DC35F5 /* NEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719481D5B539B00DC35F5 /* NEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36A7194E1D5B539B00DC35F5 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719491D5B539B00DC35F5 /* tun2socks.framework */; };
+		36A7194F1D5B539B00DC35F5 /* tun2socks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719491D5B539B00DC35F5 /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36A719501D5B53A500DC35F5 /* lwip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719471D5B539B00DC35F5 /* lwip.framework */; };
+		36A719511D5B53A500DC35F5 /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719481D5B539B00DC35F5 /* NEKit.framework */; };
+		36A719521D5B53A500DC35F5 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719491D5B539B00DC35F5 /* tun2socks.framework */; };
+		36B366701D56C658003343AA /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3666F1D56C658003343AA /* VPNManager.swift */; };
+		36B366741D56CB33003343AA /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B366731D56CB33003343AA /* MD5.swift */; };
+		36C3D42A1D6C114F003069F0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 36C3D4291D6C114F003069F0 /* README.md */; };
+		36DD363A1CE7366500537ACA /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A581CE71F4000BAC90A /* MMDB.framework */; };
+		36DD363B1CE7366500537ACA /* MMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A581CE71F4000BAC90A /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36DD363C1CE7366500537ACA /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A591CE71F4000BAC90A /* Sodium.framework */; };
+		36DD363D1CE7366500537ACA /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A591CE71F4000BAC90A /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36DD363E1CE7366500537ACA /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A5A1CE71F4000BAC90A /* Yaml.framework */; };
+		36DD363F1CE7366500537ACA /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A5A1CE71F4000BAC90A /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36DD36441CE7366500537ACA /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DCE5D31CA6972400C61029 /* CommonCrypto.framework */; };
+		36DD36451CE7366500537ACA /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36DCE5D31CA6972400C61029 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36E44A2C1CF2FE3900185DBF /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360B584C1CE810870018784F /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3636DA521CE81D95007F9787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362A54341C9BD5E00056B653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3643CE131CC283BD005A9C4B;
+			remoteInfo = SpechtTunnelPacketProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		362A549C1C9CF0C30056B653 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36DD363B1CE7366500537ACA /* MMDB.framework in Embed Frameworks */,
+				36A7194D1D5B539B00DC35F5 /* NEKit.framework in Embed Frameworks */,
+				36DD363F1CE7366500537ACA /* Yaml.framework in Embed Frameworks */,
+				36DD363D1CE7366500537ACA /* Sodium.framework in Embed Frameworks */,
+				362A54F31C9D05760056B653 /* CocoaLumberjack.framework in Embed Frameworks */,
+				362A549B1C9CF0C30056B653 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				36DD36451CE7366500537ACA /* CommonCrypto.framework in Embed Frameworks */,
+				36A7194F1D5B539B00DC35F5 /* tun2socks.framework in Embed Frameworks */,
+				36A7194B1D5B539B00DC35F5 /* lwip.framework in Embed Frameworks */,
+				362A54F51C9D05780056B653 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3636DA541CE81D96007F9787 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3636DA511CE81D95007F9787 /* SpechtTunnelPacketProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		360B584C1CE810870018784F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		36164A581CE71F4000BAC90A /* MMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMDB.framework; path = Carthage/Build/Mac/MMDB.framework; sourceTree = "<group>"; };
+		36164A591CE71F4000BAC90A /* Sodium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sodium.framework; path = Carthage/Build/Mac/Sodium.framework; sourceTree = "<group>"; };
+		36164A5A1CE71F4000BAC90A /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/Mac/Yaml.framework; sourceTree = "<group>"; };
+		362A543C1C9BD5E00056B653 /* Specht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specht.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362A543F1C9BD5E00056B653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		362A54411C9BD5E00056B653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		362A54441C9BD5E00056B653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		362A54461C9BD5E00056B653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362A54951C9CE8130056B653 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		362A54961C9CF0B20056B653 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		362A54EE1C9D056F0056B653 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		362A54EF1C9D056F0056B653 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		3636D9B01CE81749007F9787 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		3636D9B21CE81749007F9787 /* share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = share.entitlements; sourceTree = "<group>"; };
+		3636D9B31CE81749007F9787 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		3636D9B61CE81749007F9787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		3636D9B81CE81749007F9787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3643CE141CC283BD005A9C4B /* SpechtTunnelPacketProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpechtTunnelPacketProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3643CE171CC283BD005A9C4B /* SpechtTunnelPacketProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SpechtTunnelPacketProvider.entitlements; sourceTree = "<group>"; };
+		3643CE181CC283BD005A9C4B /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		3643CE1A1CC283BD005A9C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3643CE3F1CC285BF005A9C4B /* SpechtTunnelPacketProvider-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpechtTunnelPacketProvider-Bridging-Header.h"; sourceTree = "<group>"; };
+		3643CE4C1CC293D4005A9C4B /* Specht.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Specht.entitlements; sourceTree = "<group>"; };
+		36A719471D5B539B00DC35F5 /* lwip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lwip.framework; path = Carthage/Build/Mac/lwip.framework; sourceTree = "<group>"; };
+		36A719481D5B539B00DC35F5 /* NEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NEKit.framework; path = Carthage/Build/Mac/NEKit.framework; sourceTree = "<group>"; };
+		36A719491D5B539B00DC35F5 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/Mac/tun2socks.framework; sourceTree = "<group>"; };
+		36B3666F1D56C658003343AA /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		36B366731D56CB33003343AA /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		36C3D4291D6C114F003069F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		36DCE5D31CA6972400C61029 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = "<group>"; };
+		36DCE5DD1CA6997700C61029 /* Specht-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specht-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362A54391C9BD5E00056B653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A7194A1D5B539B00DC35F5 /* lwip.framework in Frameworks */,
+				362A54F21C9D05760056B653 /* CocoaLumberjack.framework in Frameworks */,
+				36A7194E1D5B539B00DC35F5 /* tun2socks.framework in Frameworks */,
+				36DD363C1CE7366500537ACA /* Sodium.framework in Frameworks */,
+				362A549A1C9CF0C30056B653 /* CocoaAsyncSocket.framework in Frameworks */,
+				36A7194C1D5B539B00DC35F5 /* NEKit.framework in Frameworks */,
+				36DD363E1CE7366500537ACA /* Yaml.framework in Frameworks */,
+				36DD363A1CE7366500537ACA /* MMDB.framework in Frameworks */,
+				36E44A2C1CF2FE3900185DBF /* NetworkExtension.framework in Frameworks */,
+				36DD36441CE7366500537ACA /* CommonCrypto.framework in Frameworks */,
+				362A54F11C9D056F0056B653 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3643CE111CC283BD005A9C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B584E1CE810910018784F /* NetworkExtension.framework in Frameworks */,
+				36164A5C1CE71F4000BAC90A /* MMDB.framework in Frameworks */,
+				36164A5D1CE71F4000BAC90A /* Sodium.framework in Frameworks */,
+				36164A5E1CE71F4000BAC90A /* Yaml.framework in Frameworks */,
+				3643CE481CC290AF005A9C4B /* CocoaAsyncSocket.framework in Frameworks */,
+				3643CE241CC28467005A9C4B /* CocoaLumberjack.framework in Frameworks */,
+				3643CE251CC28467005A9C4B /* CocoaLumberjackSwift.framework in Frameworks */,
+				36164A561CE71F3F00BAC90A /* CommonCrypto.framework in Frameworks */,
+				36A719501D5B53A500DC35F5 /* lwip.framework in Frameworks */,
+				36A719511D5B53A500DC35F5 /* NEKit.framework in Frameworks */,
+				36A719521D5B53A500DC35F5 /* tun2socks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		362A54331C9BD5E00056B653 = {
+			isa = PBXGroup;
+			children = (
+				36C3D4291D6C114F003069F0 /* README.md */,
+				36A719531D5B543700DC35F5 /* Carthage */,
+				362A54951C9CE8130056B653 /* Cartfile */,
+				362A543E1C9BD5E00056B653 /* Specht */,
+				3643CE151CC283BD005A9C4B /* SpechtTunnelPacketProvider */,
+				3636D9AE1CE81749007F9787 /* share */,
+				362A543D1C9BD5E00056B653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		362A543D1C9BD5E00056B653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				362A543C1C9BD5E00056B653 /* Specht.app */,
+				3643CE141CC283BD005A9C4B /* SpechtTunnelPacketProvider.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		362A543E1C9BD5E00056B653 /* Specht */ = {
+			isa = PBXGroup;
+			children = (
+				3643CE4C1CC293D4005A9C4B /* Specht.entitlements */,
+				36DCE5DD1CA6997700C61029 /* Specht-Bridging-Header.h */,
+				362A543F1C9BD5E00056B653 /* AppDelegate.swift */,
+				362A54411C9BD5E00056B653 /* Assets.xcassets */,
+				362A54431C9BD5E00056B653 /* MainMenu.xib */,
+				362A54461C9BD5E00056B653 /* Info.plist */,
+				36B3666F1D56C658003343AA /* VPNManager.swift */,
+				36B366731D56CB33003343AA /* MD5.swift */,
+			);
+			path = Specht;
+			sourceTree = "<group>";
+		};
+		3636D9AE1CE81749007F9787 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				3636D9B31CE81749007F9787 /* ShareViewController.swift */,
+				3636D9B51CE81749007F9787 /* ShareViewController.xib */,
+				3636D9B81CE81749007F9787 /* Info.plist */,
+				3636D9AF1CE81749007F9787 /* Supporting Files */,
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		3636D9AF1CE81749007F9787 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3636D9B01CE81749007F9787 /* icon.icns */,
+				3636D9B21CE81749007F9787 /* share.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3643CE151CC283BD005A9C4B /* SpechtTunnelPacketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3643CE181CC283BD005A9C4B /* PacketTunnelProvider.swift */,
+				3643CE1A1CC283BD005A9C4B /* Info.plist */,
+				3643CE161CC283BD005A9C4B /* Supporting Files */,
+				3643CE3F1CC285BF005A9C4B /* SpechtTunnelPacketProvider-Bridging-Header.h */,
+			);
+			path = SpechtTunnelPacketProvider;
+			sourceTree = "<group>";
+		};
+		3643CE161CC283BD005A9C4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3643CE171CC283BD005A9C4B /* SpechtTunnelPacketProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36A719531D5B543700DC35F5 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				36A719471D5B539B00DC35F5 /* lwip.framework */,
+				36A719481D5B539B00DC35F5 /* NEKit.framework */,
+				36A719491D5B539B00DC35F5 /* tun2socks.framework */,
+				360B584C1CE810870018784F /* NetworkExtension.framework */,
+				36164A581CE71F4000BAC90A /* MMDB.framework */,
+				36164A591CE71F4000BAC90A /* Sodium.framework */,
+				36164A5A1CE71F4000BAC90A /* Yaml.framework */,
+				36DCE5D31CA6972400C61029 /* CommonCrypto.framework */,
+				362A54EE1C9D056F0056B653 /* CocoaLumberjack.framework */,
+				362A54EF1C9D056F0056B653 /* CocoaLumberjackSwift.framework */,
+				362A54961C9CF0B20056B653 /* CocoaAsyncSocket.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		362A543B1C9BD5E00056B653 /* Specht */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362A545F1C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "Specht" */;
+			buildPhases = (
+				362A54381C9BD5E00056B653 /* Sources */,
+				362A54391C9BD5E00056B653 /* Frameworks */,
+				362A543A1C9BD5E00056B653 /* Resources */,
+				362A549C1C9CF0C30056B653 /* Embed Frameworks */,
+				3636DA541CE81D96007F9787 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3636DA531CE81D95007F9787 /* PBXTargetDependency */,
+			);
+			name = Specht;
+			productName = Specht;
+			productReference = 362A543C1C9BD5E00056B653 /* Specht.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3643CE131CC283BD005A9C4B /* SpechtTunnelPacketProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3643CE1E1CC283BD005A9C4B /* Build configuration list for PBXNativeTarget "SpechtTunnelPacketProvider" */;
+			buildPhases = (
+				3643CE101CC283BD005A9C4B /* Sources */,
+				3643CE111CC283BD005A9C4B /* Frameworks */,
+				3643CE121CC283BD005A9C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpechtTunnelPacketProvider;
+			productName = SpechtTunnelPacketProvider;
+			productReference = 3643CE141CC283BD005A9C4B /* SpechtTunnelPacketProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		362A54341C9BD5E00056B653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Zhuhao Wang";
+				TargetAttributes = {
+					362A543B1C9BD5E00056B653 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = H5443445N6;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					3643CE131CC283BD005A9C4B = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = H5443445N6;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 362A54371C9BD5E00056B653 /* Build configuration list for PBXProject "Specht" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 362A54331C9BD5E00056B653;
+			productRefGroup = 362A543D1C9BD5E00056B653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				362A543B1C9BD5E00056B653 /* Specht */,
+				3643CE131CC283BD005A9C4B /* SpechtTunnelPacketProvider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		362A543A1C9BD5E00056B653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362A54421C9BD5E00056B653 /* Assets.xcassets in Resources */,
+				362A54451C9BD5E00056B653 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3643CE121CC283BD005A9C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		362A54381C9BD5E00056B653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B366701D56C658003343AA /* VPNManager.swift in Sources */,
+				362A54401C9BD5E00056B653 /* AppDelegate.swift in Sources */,
+				36B366741D56CB33003343AA /* MD5.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3643CE101CC283BD005A9C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C3D42A1D6C114F003069F0 /* README.md in Sources */,
+				3643CE191CC283BD005A9C4B /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3636DA531CE81D95007F9787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3643CE131CC283BD005A9C4B /* SpechtTunnelPacketProvider */;
+			targetProxy = 3636DA521CE81D95007F9787 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		362A54431C9BD5E00056B653 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				362A54441C9BD5E00056B653 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3636D9B51CE81749007F9787 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3636D9B61CE81749007F9787 /* Base */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		362A545D1C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		362A545E1C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		362A54601C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Specht/Specht.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/NEKit/tun2socks/build/Debug",
+				);
+				INFOPLIST_FILE = Specht/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30fcd81f-15a5-40a5-ada9-8d27995effd5";
+			};
+			name = Debug;
+		};
+		362A54611C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Specht/Specht.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/NEKit/tun2socks/build/Debug",
+				);
+				INFOPLIST_FILE = Specht/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3643CE1F1CC283BD005A9C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = SpechtTunnelPacketProvider/SpechtTunnelPacketProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SpechtTunnelPacketProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht.SpechtTunnelPacketProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "25a846a7-bdf1-45a4-a355-81653d0b718b";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		3643CE201CC283BD005A9C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = SpechtTunnelPacketProvider/SpechtTunnelPacketProvider.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SpechtTunnelPacketProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht.SpechtTunnelPacketProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		362A54371C9BD5E00056B653 /* Build configuration list for PBXProject "Specht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A545D1C9BD5E10056B653 /* Debug */,
+				362A545E1C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362A545F1C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "Specht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A54601C9BD5E10056B653 /* Debug */,
+				362A54611C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3643CE1E1CC283BD005A9C4B /* Build configuration list for PBXNativeTarget "SpechtTunnelPacketProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3643CE1F1CC283BD005A9C4B /* Debug */,
+				3643CE201CC283BD005A9C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 362A54341C9BD5E00056B653 /* Project object */;
+}

@@ -1,0 +1,75 @@
+PODS:
+  - DynamicBlurView (4.0.0)
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
+    - iOSSnapshotTestCase/Core
+  - Nimble (7.3.4)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - QMUIKit/QMUICore (4.2.0):
+    - QMUIKit/QMUILog
+    - QMUIKit/QMUIWeakObjectContainer
+  - QMUIKit/QMUILog (4.2.0)
+  - QMUIKit/QMUIWeakObjectContainer (4.2.0)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
+  - SwiftLint (0.35.0)
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase (~> 6.0.2)
+  - Nimble (~> 7.3.1)
+  - PopupDialog (from `../`)
+  - QMUIKit/QMUICore (= 4.2.0)
+  - SwifterSwift (= 5.2.0)
+  - SwiftLint (~> 0.35)
+
+SPEC REPOS:
+  trunk:
+    - DynamicBlurView
+    - iOSSnapshotTestCase
+    - Nimble
+    - QMUIKit
+    - SwifterSwift
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  PopupDialog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  QMUIKit: 464fc9c08c437b02c7d1e9543112ed89d5bd8128
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+
+PODFILE CHECKSUM: e25cdbed7e92beed1a833c88bc82cf857c1d31ed
+
+COCOAPODS: 1.9.3

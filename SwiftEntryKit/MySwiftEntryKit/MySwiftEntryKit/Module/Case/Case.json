@@ -1,0 +1,19 @@
+[
+    {
+        "name":"toast",
+        "forward":"toast",
+        "parameters":null
+    },
+    {
+        "name":"custom",
+        "forward":"custom",
+        "parameters":null
+    },
+    {
+        "name":"【迅游加速器】的wifi alert",
+        "forward":"wifi",
+        "parameters":null
+    }
+]
+
+

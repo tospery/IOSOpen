@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - Kanna (4.0.2)
+  - Kingfisher (4.10.1)
+  - SwiftColor (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - CocoaLumberjack/Swift (~> 3.4.2)
+  - Kanna (~> 4.0.2)
+  - Kingfisher (~> 4.10.0)
+  - SwiftColor (~> 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - Kanna
+    - Kingfisher
+    - SwiftColor
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  Kanna: c60b61d72554bf04ed1ee074f9b379855cab4892
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SwiftColor: aad338783abbcdd78df9031a38a7a96aae3d9122
+
+PODFILE CHECKSUM: d7bb1b5edab231b687a7f53d5de0f19f67a5eede
+
+COCOAPODS: 1.6.0.beta.2
